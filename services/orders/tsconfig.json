@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/base.json",
-  "exclude": ["packages"],
+  "exclude": ["src"],
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node"

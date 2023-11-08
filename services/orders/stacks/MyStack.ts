@@ -14,14 +14,14 @@ export function API({ stack }: StackContext) {
       },
     },
     routes: {
-      "GET /": "packages/functions/src/lambda.handler",
-      "GET /todo": "packages/functions/src/todo.list",
-      "POST /todo": "packages/functions/src/todo.create",
+      "GET /": "src/functions/lambda.handler",
+      "GET /todo": "src/functions/todo.list",
+      "POST /todo": "src/functions/todo.create",
     },
   });
 
   bus.subscribe("todo.created", {
-    handler: "packages/functions/src/events/todo-created.handler",
+    handler: "src/functions/events/todo-created.handler",
   });
 
   stack.addOutputs({
