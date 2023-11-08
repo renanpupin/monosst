@@ -1,0 +1,27 @@
+{
+  "name": "monosst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Renan Pupin",
+  "license": "MIT",
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "turbo": "^1.10.16"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ]
+}
