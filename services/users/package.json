@@ -11,6 +11,10 @@
     "console": "sst console",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "zod": "^3.22.4"
+  },
   "devDependencies": {
     "sst": "^2.35.1",
     "aws-cdk-lib": "2.101.1",
@@ -18,8 +22,5 @@
     "typescript": "^5.2.2",
     "@tsconfig/node18": "^18.2.2",
     "tsconfig": "workspace:*"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
